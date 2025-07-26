@@ -1,0 +1,302 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: orange;
+}
+
+.logo h3 {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* Banner Section */
+.banner {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap-reverse;
+}
+
+.banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-text h1 span {
+  color: #ff9800;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.banner-btn {
+  background: #ff9800;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.banner-btn:hover {
+  background: #e68900;
+}
+
+.banner-image {
+  flex: 1;
+  text-align: center;
+}
+
+.banner-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+  }
+}
+
+/* Plants Section */
+.plants {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 36px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plant-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.plant-card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.plant-card p {
+  color: #ff9800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.plant-card button {
+  padding: 10px 20px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background: #e68900;
+}
+
+@media (max-width: 768px) {
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Plant Lovers Section */
+.plant-lovers {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.lovers-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.lovers-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lovers-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.lovers-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lovers-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.lovers-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.lovers-text li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .lovers-content {
+    flex-direction: column;
+  }
+}
+
+/* Join Section */
+.join {
+  background-image: url('photos/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.join-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.join h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.join-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.join-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  border: none;
+  border-radius: 6px;
+}
+
+.join-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .join-form input {
+    width: 100%;
+  }
+}
